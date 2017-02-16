@@ -10,10 +10,9 @@ Ne pas oublier de mettre
 ****************************************************/
 body{
 	position : relative;
-	background:gray;
 	margin-left : 15%;
 	margin-right : 15%;
-	
+	 background-image: url("./sertarien/images/bg.jpg");
 	
 }
 .container { position:relative;
@@ -21,9 +20,8 @@ body{
 	height : 98%;
 	padding:5px 5px 5px 5px;
 	margin : auto;
-	background : purple;
 	overflow: hidden;
-
+	
  }
  
 header{
@@ -42,6 +40,7 @@ header{
 	border:1 px solid;
 	background-color : white;
 	-webkit-border-radius: 	10px;
+	box-shadow: 10px 10px 5px #888888;
 	}
 
 .nav{
@@ -56,9 +55,8 @@ header{
 div.collaborateur{
 	background-color : green;
 	color : #000l;
-	margin: 20px 0 20px 0;
-    padding: 20px;
 	-webkit-border-radius: 	10px;
+	box-shadow: 10px 10px 5px #888888;
 }
 
 
@@ -75,6 +73,7 @@ ul.contact{
     width: auto;
     background-color: #f1f1f1;
 	-webkit-border-radius: 	10px;
+	box-shadow: 10px 10px 5px #888888;
 }
 
 li.contact a {
@@ -89,12 +88,12 @@ li.contact a {
 
 ul.menuBar{
     list-style-type: none;
-    margin-top: 10px;
+    margin-top: 20px;
     padding: 0px;
     width: 200px;
-	min-height: 500px;
-	height : 10%;
-	
+	min-height: auto;
+	height : auto;
+	box-shadow: 10px 10px 5px #888888;
     background-color: #f1f1f1;
 	-webkit-border-radius: 	10px;
 	
@@ -125,18 +124,28 @@ li.menuBar a:hover:not(.active) {
 #scene{
 	position:relative;
 	top: 0px;
-	left: 5px ;
-	width:auto;
-	height:100%;
+	left: 25px ;
+	right : 10%;
+	width: auto;
+	height:1000px;
 	margin : 5px;
 	overflow:hidden;
 	background-color : white;
 	-webkit-border-radius: 10px;
 	z-index:0;
+	box-shadow: 10px 10px 5px #888888;
 	
 }
 
-
+footer{
+	position : fixed;
+	bottom : 0px;
+	left: 0px;
+	width : 10%;
+	height : 100%;
+	background : black;
+	z-index : 1;
+}
  
 
 
