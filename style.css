@@ -17,32 +17,50 @@ body{
 }
 .container { position:relative;
 	width : 100%;
-	height : 98%;
+	height : auto;
 	padding:5px 5px 5px 5px;
 	margin : auto;
 	/*overflow: hidden;*/
-	
+	display : table-cell;
+	vertical-align: middle;
  }
  
 header{
 	background-color : white;
 	color : #000;
-	margin: 20px 0 20px 0;
-    padding: 20px;
 	position:relative;/*relative*/
 	top: 0px;
-	left:0x ;
+	left:0px ;
 	text-align: center;
-	width:90%;
-	height:10px;
+	width:auto;
+	height:auto;
 	z-index:0;
-	overflow:hidden;
+	margin-left: 0px;
+	margin-top : 20px;
+	margin-left: 0px;
+	margin-bottom : 20px;
+    padding: 20px;
 	border:1 px solid;
+	
 	background-color : white;
 	-webkit-border-radius: 	10px;
 	box-shadow: 10px 10px 5px #888888;
+	-webkit-transition :all 1s;
+	
+	
 	}
+header:hover{
+	-webkit-animation-name: example; 
+    -webkit-animation-duration: 5s;
+}
 
+@keyframes example {
+	0%   {background-color: white;color-text : black;}
+    50%  {background-color: black;
+		color : white;}
+    100% {background-color: white;color-text : black;}
+   
+}
 .nav{
 	float : left;
 	height : 100%;
@@ -50,6 +68,8 @@ header{
 	/*border:1px solid #000; */
 	top : 0px;
 	left : 0 px;
+	display: table-cell;
+    vertical-align: top;
 	}
 /********************************************/
 div.collaborateur{
@@ -87,6 +107,8 @@ li.contact {
     padding: 8px 16px;
     text-decoration: none;
 }
+
+
 /* *************************** */
 
 
@@ -130,10 +152,10 @@ li.menuBar a:hover:not(.active) {
 	position:relative;
 	top: 0px;
 	left: 25px ;
-	right : 10%;
-	width: 70%;
+	width: auto;
 	height:auto;
-	margin : 5px;
+	margin-top : 5px;
+	margin-right : 22px;
 	padding-top : 5px;
 	padding-left : 20px;
 	overflow:hidden;
@@ -143,6 +165,42 @@ li.menuBar a:hover:not(.active) {
 	box-shadow: 10px 10px 5px #888888;
 	
 }
+#lapin{
+	position : relative;
+	top: 0px;
+	left: 0px;
+	width : 315px;
+	height : 314px;
+	background-image: url("./sertarien/images/lapin1.png");
+	float : left;
+	margin : 0px 20px 0px 0px;
+    -webkit-animation: lapin_animation 7s infinite;
+}
+#lapin:hover {
+	
+}
+
+@keyframes lapin_animation {
+	0%   {background-image: url("./sertarien/images/lapin1.png");}
+	25%  {background-image:url("./sertarien/images/lapin2.png");}
+    50%  {background-image:url("./sertarien/images/lapin3.png");}
+	75%  {background-image:url("./sertarien/images/lapin2.png");}
+	100% {background-image: url("./sertarien/images/lapin1.png");}
+}
+h3{
+		position : relative;
+		left: 10px;
+ }
+ 
+p{
+	 position : relative;
+	 padding : 10px;
+	 margin : 5px;
+	 text-indent: 50px;
+	 
+ }
+
+
 
 footer{
 	position : relative;
@@ -154,20 +212,4 @@ footer{
 	background : gray;
 	z-index : 1;
 }
-h3{
-		position : relative;
-		left: 10px;
- }
- 
- p{
-	 position : relative;
-	 padding : 10px;
-	 margin : 5px;
-	 text-indent: 50px;
-	 
- }
-
-
-
-
 
