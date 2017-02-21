@@ -64,7 +64,7 @@ div.collaborateur{
 }
 
 
-li.title a.active{
+li.title.active{
 	background-color: #173935;
     color: white;
 	border-top-left-radius: 10px;
@@ -78,18 +78,27 @@ ul.contact{
     background-color: #f1f1f1;
 	-webkit-border-radius: 	10px;
 	box-shadow: 10px 10px 5px #888888;
+	
 }
-li.title a{
+li.title{
     display: block;
     color: #000;
     padding: 8px 16px;
     text-decoration: none;
 }
-li.contact {
+li.contact a{
     display: block;
     color: #000;
     padding: 8px 16px;
     text-decoration: none;
+}
+li.contact a:hover{
+    display: block;
+    color: #8181F7;
+    padding: 8px 16px;
+    text-decoration: none;
+    transform: rotateX(360deg);
+    transition-duration: 1s;
 }
 /* *************************** */
 
@@ -116,9 +125,11 @@ li.menuBar a {
 	
 }
 
-li.menuBar a.active {
+li.menuBar.active {
     background-color: #4CAF50;
     color: white;
+    display: block;
+    padding: 8px 16px;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
 }
@@ -126,6 +137,7 @@ li.menuBar a.active {
 li.menuBar a:hover:not(.active) {
     background-color: #555;
     color: white;
+    
 }
 
 /*********************************/	
@@ -159,8 +171,8 @@ footer{
 	z-index : 1;
 }
 h3{
-		position : relative;
-		left: 10px;
+	position : relative;
+	left: 10px;
  }
  
  p{
