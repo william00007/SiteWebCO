@@ -12,7 +12,7 @@ body{
 	position : relative;
 	margin-left : 10%;
 	margin-right : 10%;
-	background: url("./images/bg.jpg") no-repeat;
+	background: url("./img/bg.jpg") no-repeat;
 }
 
 .container{
@@ -30,7 +30,7 @@ header{
 	margin-top : 20px;
 	margin-bottom : 20px;
     padding: 20px 0px 20px 0px;
-	position:relative;/*relative*/
+	position:relative;
 	top: 0px;
 	left:0px ;
 	text-align: center;
@@ -100,8 +100,8 @@ li.contact a:hover:not(.titre){
 
 li.arrow {
 	list-style-type: none;
-	background: url(images/arrow.png) no-repeat 0 0.40em;
-	padding-left: 22px;
+	background: url(img/arrow.png) no-repeat 0 0.40em;
+	padding-left: 24px;
 }
 
 /* *************************** */
