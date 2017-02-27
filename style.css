@@ -10,9 +10,9 @@ Ne pas oublier de mettre
 ****************************************************/
 body{
 	position : relative;
-	margin-left : 15%;
-	margin-right : 15%;
-	background-image: url("./images/bg.jpg");
+	margin-left : 10%;
+	margin-right : 10%;
+	background: url("./images/bg.jpg") no-repeat;
 }
 
 .container{
@@ -96,6 +96,12 @@ li.contact a:hover:not(.titre){
     text-decoration: none;
     transform: rotateX(360deg);
     transition-duration: 1s;
+}
+
+li.arrow {
+	list-style-type: none;
+	background: url(images/arrow.png) no-repeat 0 0.40em;
+	padding-left: 22px;
 }
 
 /* *************************** */
