@@ -158,11 +158,7 @@ li.menuBar.titre {
 .imagecontainer{
 	position: relative;
 	
-	display: inline-block;                  /* Transforme l'élément "bloc" en "inline" */
-    vertical-align: middle;                 /* Ajuste le centrage vertical */
-	
-	margin: 0 auto;             /* Centre le block horizontalement */
-    width: 50%;
+	left: 8%;
 }
 
 .container.image{
