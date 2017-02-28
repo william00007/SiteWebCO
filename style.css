@@ -85,11 +85,8 @@ p.ref{
     text-justify: inter-word;
 }
 
-#center{
-	position: relative;
-	
-	margin: auto;
-	width: 80%;
+p.center{
+	text-align: center;
 }
 
 /* MENU BAR */
@@ -157,8 +154,8 @@ li.menuBar.titre {
 
 .imagecontainer{
 	position: relative;
-	
-	left: 8%;
+	text-align: center;
+	left: 0;
 }
 
 .container.image{
@@ -167,6 +164,7 @@ li.menuBar.titre {
 	background-color: white;
 	padding:0px 5px 0px 5px;
 }
+
 img.resize{
 	width: 200px;
 	height: auto;
