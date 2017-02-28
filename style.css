@@ -173,3 +173,18 @@ p{
     text-align: justify;
     text-justify: inter-word;
 }
+.imagecontainer{
+	position: relative;
+	top: 0px;
+	left: 15%;
+}
+.container.image{
+    position:relative;
+	height : auto;
+	background-color: white;
+	padding:0px 5px 0px 5px;
+}
+img.resize{
+	width: 200px;
+	height: auto;
+}
