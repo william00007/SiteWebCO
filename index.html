@@ -6,129 +6,140 @@
 	<title>Chef d'oeuvre M2 IGAI - Dynamic Sampling and Rendering of APSS</title>
 </head>
 <body>
-    <div class="container">
-        <header>Chef d'oeuvre M2 IGAI - Dynamic Sampling and Rendering of Algebraic Point Set Surfaces</header>
-        <nav class="nav">
-            <div class = "collaborateurs">
-                <ul class = "contact">
-                    <li class = "contact titre" >Groupe</li>
-                    <li class = "contact"><a href="mailto:willcaisson@gmail.com" title="Send an email to William">William CAISSON</a></li>
-                    <li class = "contact"><a href="mailto:xavier.chalut@gmail.com" title="Send an email to Xavier">Xavier CHALUT</a></li>
-                    <li class = "contact"><a href="mailto:christophe.claustre.31" title="Send an email to Christophe">Christophe CLAUSTRE</a></li>
-                    <li class = "contact"> <a href="mailto:thibault.le@live.fr" title="Send an email to Thibault">Thibault LEJEMBLE</a></li>
-                </ul>
-            </div>
-            <ul class = "menuBar">
-                <li class = "menuBar titre">Supports de soutenance</a></li>
-                <li class = "menuBar"><a href="./doc/[Caisson_Chalut_Claustre_Lejemble]Méthodes & algorithmes - diapositives.pdf" title="Effectuée le 28/11/2016">Méthodes & Algorithmes</a></li>
-                <li class = "menuBar"><a href="./doc/[Caisson_Chalut_Claustre_Lejemble]Spécifications - diapositives.pdf" title="Effectuée le 12/12/2016">Spécifications</a></li>
-                <li class = "menuBar"><a href="./doc/[Caisson_Chalut_Claustre_Lejemble]Conception - diapositives.pdf" title="Effectuée le 24/01/2017">Conception</a></li>
-                <li class = "menuBar"><a href="http://www.google.com" title="Effectuée le 28/02/2017">Recette</a></li>
-            </ul>
-            <ul class = "menuBar">
-                <li class = "menuBar titre">Rapports</a></li>
-                <li class = "menuBar"><a href="./doc/[Caisson_Chalut_Claustre_Lejemble]Méthodes & algorithmes.pdf" title="Rendu le 24/11/2016">Méthodes et Algorithmes</a></li>
-                <li class = "menuBar"><a href="./doc/[Caisson_Chalut_Claustre_Lejemble]Spécifications.pdf" title="Rendu le 09/12/2016">Spécifications</a></li>
-                <li class = "menuBar"><a href="./doc/[Caisson_Chalut_Claustre_Lejemble]Conception.pdf" title="Rendu le 19/01/2017">Conception</a></li>
-                <li class = "menuBar"><a href="./doc/[Caisson_Chalut_Claustre_Lejemble]Recette.pdf" title="Rendu le 21/02/2017">Recette</a></li>
-            </ul>
+	<nav class="nav">
+		<ul class = "menuBar">
+			<li class = "menuBar titre equipe" >Équipe</li>
+			<li class = "menuBar"><a href="mailto:willcaisson@gmail.com" title="Send an email to William">William CAISSON</a></li>
+			<li class = "menuBar"><a href="mailto:xavier.chalut@gmail.com" title="Send an email to Xavier">Xavier CHALUT</a></li>
+			<li class = "menuBar"><a href="mailto:christophe.claustre.31" title="Send an email to Christophe">Christophe CLAUSTRE</a></li>
+			<li class = "menuBar"> <a href="mailto:thibault.le@live.fr" title="Send an email to Thibault">Thibault LEJEMBLE</a></li>
+		</ul>
+		<ul class = "menuBar">
+			<li class = "menuBar titre equipe">Ressources</a></li>
+			<li class = "menuBar"><a href="./doc/[Caisson_Chalut_Claustre_Lejemble]Manuel Utilisateur.pdf">Manuel utilisateur</a></li>
+			<li class = "menuBar"><a href="./doc/[Caisson_Chalut_Claustre_Lejemble]source.zip">Code source (plugin uniquement)</a></li>
 
-			<ul class = "menuBar">
-                <li class = "menuBar titre">Autres</a></li>
-                <li class = "menuBar"><a href="./doc/[Caisson_Chalut_Claustre_Lejemble]Manuel Utilisateur.pdf">Manuel utilisateur</a></li>
-                <li class = "menuBar"><a href="./doc/[Caisson_Chalut_Claustre_Lejemble]source.zip">Code source (plugin uniquement)</a></li>
-            </ul>
-        </nav>
-        <div id="corps">
-            <h1> Introduction </h1>
-                <p>Dans le cadre du projet de chef d'oeuvre du Master M2 IGAI, nous avons développé un plugin au
-				moteur de rendu temps réel <a href="https://github.com/AGGA-IRIT/Radium-Engine">Radium-Engine</a>
-				intégrant la methode de visualisation de nuages de points décrite dans
-				l'article "<a href="http://www.labri.fr/perso/guenneba/DynAPSS_eg08.php">Dynamic
-				Sampling and Rendering of Algebraic Point Set Surfaces</a>". Radium-Engine est un projet de
-				l'Institut de Recherche en Informatique de Toulouse (IRIT). Ce chef d'oeuvre était supervisé par
-				<a href="https://www.irit.fr/recherches/VORTEX/MelladoNicolas/" title="Visit the irit webpage
-				concerning M. Nicolas Mellado">M. Nicolas Mellado</a>, chercheur à l'IRIT dans l'équipe VORTEX.</p>
+			<li class = "menuBar titre">Méthodes & Algorithmes</a></li>
+			<li class = "menuBar"><a href="./doc/[Caisson_Chalut_Claustre_Lejemble]Méthodes & algorithmes.pdf" title="Rendu le 24/11/2016">Rapport</a></li>
+			<li class = "menuBar"><a href="./doc/[Caisson_Chalut_Claustre_Lejemble]Méthodes & algorithmes - diapositives.pdf" title="Effectuée le 28/11/2016">Support de soutenance</a></li>
 			
-			<h1> Résumé de l'article </h1>
+			<li class = "menuBar titre">Spécifications</a></li>
+			<li class = "menuBar"><a href="./doc/[Caisson_Chalut_Claustre_Lejemble]Spécifications.pdf" title="Rendu le 09/12/2016">Rapport</a></li>
+			<li class = "menuBar"><a href="./doc/[Caisson_Chalut_Claustre_Lejemble]Spécifications - diapositives.pdf" title="Effectuée le 12/12/2016">Support de soutenance</a></li>
 			
-				<p>Avec l’arrivée des méthodes de numérisation 3D telles que le scanner laser, la représentation
-                par nuage de points devient bien plus courante pour représenter les surfaces d’objets en 3
-                dimensions. Cette représentation de plus en plus facile à obtenir, est assez complexe à visualiser.
-                Les problèmes majeurs étant le bruit généré lors de l’acquisition des points et la quantité de
-                données à manipuler si l’on souhaite représenter avec une grande précision la scène d’origine.</p>
-				
-				<p>Dans cette optique, Gaël Guennebaud et ses collègues proposent une méthode, se basant sur
-				les surfaces algébriques définies par un ensemble de points, permettant d'approcher la surface décrite
-				par les points d'origine par un nouveau nuage de points plus précis et ceci en temps réel.</p>
-				
-				<p>Cette technique permet d'atténuer le bruit dans le nuage d'origine et permet également aux utilisateurs
-				de manipuler des nuages de points moins précis. Cependant, cette méthode étant très complexe, une implémentation
-				utilisant la parallélisation sur GPU (CUDA) est fortement recommandée dans l'article pour atteindre un nombre
-				d'images par seconde convenable. Une implémentation est d'ailleurs proposée par les chercheurs dans l'article.</p>
-				
-				<p>Pour plus de précision sur cet article, vous pouvez vous reportez à notre rapport de <a href="./doc/[Caisson_Chalut_Claustre_Lejemble]Méthodes & algorithmes.pdf">Méthodes et Algorithmes</a> ou bien à l'<a href="http://www.labri.fr/perso/guenneba/docs/DynamicSamplingAPSS_eg08.pdf">article</a> directement.</p>
-				
-			<h1> Notre participation </h1>
-				
-				<p>Radium-Engine étant un projet en cours à l'IRIT, nous avons fait des modifications au moteur lui-même :</p>
-					<ul>
-						<li>Accessibilité depuis un plugin du viewer, l'élément de l'interface affichant le rendu (donne accès à la caméra, aux classes effectuant le rendu ...)</li>
-						<li>Possibilité d'ajout d’une classe de rendu via le viewer</li>
-						<li>Support des points dans Radium (modification de la classe Mesh gérant les informations sur les objets)</li>
-						<li>Ajout de la propriété “Splat’s Radius”</li>
-						<li>Ajout des “Pointy” RenderObjects, le RenderObject gérant textures et configuration de shader associée à un objet</li>
-						<li>Ajout de différents shaders pour le rendu de point :</li>
-							<ul>
-								<li>Un couple vertex/fragment shader, utilisant le système de splat d'OpenGL.</li>
-									<ul>
-										<li class="arrow">Quad non orientés avec ses dimensions en pixels</li>
-									</ul>
-								<li>Un triplé vertex/geometry/fragment shader, créant des quads retaillés disque.</li>
-									<ul>
-										<li class="arrow">Disque orienté selon la normale avec ses dimensions en unité de la scène</li>
-									</ul>
-							</ul>
-					</ul>
-
-				<p>Fonctionnalités du plugin :</p>
-					<ul>
-						<li>Rendu basique de points</li>
-						<li>Instanciation de “Pointy” RenderObjects automatique à l’ouverture d’un fichier</li>
-						<li>Implémentation de l’article incomplète, cependant personnalisable :</li>
+			<li class = "menuBar titre">Conception</a></li>
+			<li class = "menuBar"><a href="./doc/[Caisson_Chalut_Claustre_Lejemble]Conception.pdf" title="Rendu le 19/01/2017">Rapport</a></li>
+			<li class = "menuBar"><a href="./doc/[Caisson_Chalut_Claustre_Lejemble]Conception - diapositives.pdf" title="Effectuée le 24/01/2017">Support de soutenance</a></li>
+			
+			<li class = "menuBar titre">Recette</a></li>
+			<li class = "menuBar"><a href="./doc/[Caisson_Chalut_Claustre_Lejemble]Recette.pdf" title="Rendu le 21/02/2017">Rapport</a></li>
+			<li class = "menuBar"><a href="http://www.google.com" title="Effectuée le 28/02/2017">Support de soutenance</a></li>
+		</ul>
+		
+		<div class="container image">
+			<img class="resize" src="./img/irit.jpg" /><img class="resize" src="./img/ups.jpg" />
+		</div>
+	</nav>
+	
+	<header>Chef d'oeuvre M2 IGAI - Dynamic Sampling and Rendering of Algebraic Point Set Surfaces</header>
+		
+	<div id="corps">
+		<h1> Introduction </h1>
+			<p>Dans le cadre du projet de chef d'oeuvre du Master M2 IGAI, nous avons développé un plugin au
+			moteur de rendu temps réel <a href="https://github.com/AGGA-IRIT/Radium-Engine">Radium-Engine</a>
+			intégrant la methode de visualisation de nuages de points décrite dans
+			l'article "<a href="http://www.labri.fr/perso/guenneba/DynAPSS_eg08.php">Dynamic
+			Sampling and Rendering of Algebraic Point Set Surfaces</a>". Radium-Engine est un projet de
+			l'Institut de Recherche en Informatique de Toulouse (IRIT). Ce chef d'oeuvre était supervisé par
+			<a href="https://www.irit.fr/recherches/VORTEX/MelladoNicolas/" title="Visit the irit webpage
+			concerning M. Nicolas Mellado">M. Nicolas Mellado</a>, chercheur à l'IRIT dans l'équipe VORTEX.</p>
+		
+		<h1> Résumé de l'article </h1>
+		
+			<p>Avec l’arrivée des méthodes de numérisation 3D telles que le scanner laser, la représentation
+			par nuage de points devient bien plus courante pour représenter les surfaces d’objets en 3
+			dimensions. Cette représentation de plus en plus facile à obtenir, est assez complexe à visualiser.
+			Les problèmes majeurs étant le bruit généré lors de l’acquisition des points et la quantité de
+			données à manipuler si l’on souhaite représenter avec une grande précision la scène d’origine.</p>
+			
+			<p>Dans cette optique, Gaël Guennebaud et ses collègues proposent une méthode, se basant sur
+			les surfaces algébriques définies par un ensemble de points, permettant d'approcher la surface décrite
+			par les points d'origine par un nouveau nuage de points plus précis et ceci en temps réel.</p>
+			
+			<p>Cette technique permet d'atténuer le bruit dans le nuage d'origine et permet également aux utilisateurs
+			de manipuler des nuages de points moins précis. Cependant, cette méthode étant très complexe, une implémentation
+			utilisant la parallélisation sur GPU (CUDA) est fortement recommandée dans l'article pour atteindre un nombre
+			d'images par seconde convenable. Une implémentation est d'ailleurs proposée par les chercheurs dans l'article.</p>
+			
+			<p>Pour plus de précision sur cet article, vous pouvez vous reportez à notre rapport de
+			<a href="./doc/[Caisson_Chalut_Claustre_Lejemble]Méthodes & algorithmes.pdf">Méthodes et Algorithmes</a> ou bien
+			à l'<a href="http://www.labri.fr/perso/guenneba/docs/DynamicSamplingAPSS_eg08.pdf">article</a> directement.</p>
+			
+		<h1> Notre participation </h1>
+			
+			<p>Radium-Engine étant un projet en cours à l'IRIT, nous avons fait des modifications au moteur lui-même :</p>
+				<ul>
+					<li>Accessibilité depuis un plugin du viewer, l'élément de l'interface affichant le rendu (donne accès à la caméra, aux classes effectuant le rendu ...)</li>
+					<li>Possibilité d'ajout d’une classe de rendu via le viewer</li>
+					<li>Support des points dans Radium (modification de la classe Mesh gérant les informations sur les objets)</li>
+					<li>Ajout de la propriété “Splat’s Radius”</li>
+					<li>Ajout des “Pointy” RenderObjects, le RenderObject gérant textures et configuration de shader associée à un objet</li>
+					<li>Ajout de différents shaders pour le rendu de point :</li>
 						<ul>
-							<li>différentes méthodes de rééchantillonnage</li>
-							<li>différentes méthodes de sélection des voisins</li>
-							<li>implémentation CUDA optionnelle de certaine étapes</li>
-							<li>parallélisation de certaines étapes sur CPU (OpenMP)</li>
+							<li>Un couple vertex/fragment shader, utilisant le système de splat d'OpenGL.</li>
+								<ul>
+									<li class="arrow">Quad non orientés avec ses dimensions en pixels</li>
+								</ul>
+							<li>Un triplé vertex/geometry/fragment shader, créant des quads retaillés disque.</li>
+								<ul>
+									<li class="arrow">Disque orienté selon la normale avec ses dimensions en unité de la scène</li>
+								</ul>
 						</ul>
+				</ul>
+
+			<p>Fonctionnalités du plugin :</p>
+				<ul>
+					<li>Rendu basique de points</li>
+					<li>Instanciation de “Pointy” RenderObjects automatique à l’ouverture d’un fichier</li>
+					<li>Implémentation de l’article incomplète, cependant personnalisable :</li>
+					<ul>
+						<li>différentes méthodes de rééchantillonnage</li>
+						<li>différentes méthodes de sélection des voisins</li>
+						<li>implémentation CUDA optionnelle de certaine étapes</li>
+						<li>parallélisation de certaines étapes sur CPU (OpenMP)</li>
 					</ul>
+				</ul>
 
-            <h1> Résultats </h1>
-  
-                <p>Vous pouvez voir ci-dessous des exemples de résultats obtenus avec notre plugin :</p>
-                <div class="imagecontainer">
-            		<div class="container image">
-            			<img class="resize" src="./img/res/bunny0.png" /><img class="resize" src="./img/res/bunny1.png" /><img class="resize" src="./img/res/bunny2.png" />
-						</div>
-            		<div class="container image">
-            			<img class="resize" src="./img/res/dragon0.png" /><img class="resize" src="./img/res/dragon1.png" /><img class="resize" src="./img/res/dragon2.png" />
-						</div>
-            		<div class="container image">
-            			<img class="resize" src="./img/res/happy0.png" /><img class="resize" src="./img/res/happy1.png" /><img class="resize" src="./img/res/happy2.png" />
-						</div>
-					</div>
-                <p>Modèle à 8146 points sur CPU :</p>
-					<div class="imagecontainer">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/2Q9mQ0SAfiY" frameborder="0" allowfullscreen></iframe>
-					</div>
+		<h1> Résultats </h1>
 
-                <p>Modèle à 100 207 points sur GPU :</p>
-					<div class="imagecontainer">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/fPEgB0pFWb8" frameborder="0" allowfullscreen></iframe>
+			<p class="center">Vous pouvez voir ci-dessous des exemples de résultats obtenus avec notre plugin :</p>
+				<div class="imagecontainer">
+					<div class="container image">
+						<img class="resize" src="./img/res/bunny0.png" /><img class="resize" src="./img/res/bunny1.png" /><img class="resize" src="./img/res/bunny2.png" />
 					</div>
-        </div>
-	    </div>
+					<div class="container image">
+						<img class="resize" src="./img/res/dragon0.png" /><img class="resize" src="./img/res/dragon1.png" /><img class="resize" src="./img/res/dragon2.png" />
+					</div>
+					<div class="container image">
+						<img class="resize" src="./img/res/happy0.png" /><img class="resize" src="./img/res/happy1.png" /><img class="resize" src="./img/res/happy2.png" />
+					</div>
+				</div>
+
+			<p class="center">Modèle à 8146 points sur CPU :</p>
+				<div class="imagecontainer">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/2viqtsoCkaA" frameborder="0" allowfullscreen></iframe>
+				</div>
+
+			<p class="center">Modèle à 100 207 points sur GPU :</p>
+				<div class="imagecontainer">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/3wO1ysfT-Ww" frameborder="0" allowfullscreen></iframe>
+				</div>
+		
+		<h1> Références </h1>
+		<p class="ref">[Guennebaud, Gaël, Marcel Germann, and Markus Gross. "Dynamic sampling and rendering of algebraic point set surfaces."
+		Computer Graphics Forum. Vol. 27. No. 2. Blackwell Publishing Ltd, 2008.]</p>
+		
+	</div>
 </body>
 
 </html>
